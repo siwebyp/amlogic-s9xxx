@@ -39,8 +39,8 @@ on:
         default: "1024"
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt/tree/v22.03.3
-  REPO_BRANCH: 22.03.3
+  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_BRANCH: v22.03.3
   FEEDS_CONF: config-openwrt/openwrt-master/feeds.conf.default
   CONFIG_FILE: config-openwrt/openwrt-master/config
   DIY_P1_SH: config-openwrt/openwrt-master/diy-part1.sh
