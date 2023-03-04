@@ -39,7 +39,7 @@ on:
         default: "1024"
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt/releases/tag
+  REPO_URL: https://github.com/openwrt/openwrt
   REPO_tag: v22.03.3
   FEEDS_CONF: config-openwrt/openwrt-master/feeds.conf.default
   CONFIG_FILE: config-openwrt/openwrt-master/config
