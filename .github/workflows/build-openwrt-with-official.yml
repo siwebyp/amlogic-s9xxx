@@ -13,60 +13,17 @@ on:
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "s905l3a"
         type: choice
         options:
-          - all
-          - s922x_s905x3_s905d_s912_s905l3a
-          - rock5b_r66s_r68s_beikeyun_l1pro
-          - eaidk-610_king3399_tn3399
-          - vplus_tqc-a01_tanix-tx6
-          - a311d
-          - s922x
-          - s922x-n2
-          - s905x3
-          - s905x3-b
-          - s905x2
-          - s912
-          - s912-m8s
-          - s905d
-          - s905d-ki
-          - s905x
-          - s905w
-          - s905
-          - s905l2
-          - s905l3
           - s905l3a
-          - s905l3b
-          - s905lb-r3300l
-          - rock5b
-          - h88k
-          - r66s
-          - r68s
-          - h66k
-          - h68k
-          - eaidk-610
-          - king3399
-          - tn3399
-          - beikeyun
-          - l1pro
-          - vplus
-          - tqc-a01
-          - tanix-tx6
       openwrt_kernel:
         description: "Select kernel version"
         required: false
-        default: "5.15.85_6.1.1"
+        default: "5.15.96"
         type: choice
         options:
-          - 5.4.225_5.10.160_5.15.85
-          - 5.4.225_5.10.160
-          - 5.10.160_5.15.85
-          - 5.15.85_6.1.1
-          - 5.4.225
-          - 5.10.160
-          - 5.15.85
-          - 6.1.1
+          - 5.15.96
       auto_kernel:
         description: "Auto use the latest kernel"
         required: false
@@ -83,7 +40,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-22.03
   FEEDS_CONF: config-openwrt/openwrt-master/feeds.conf.default
   CONFIG_FILE: config-openwrt/openwrt-master/config
   DIY_P1_SH: config-openwrt/openwrt-master/diy-part1.sh
@@ -205,7 +162,7 @@ jobs:
           body: |
             This is OpenWrt firmware for Amlogic and Rockchip
             * Firmware information
-            Default IP: 192.168.1.1
+            Default IP: 10.10.10.1
             Default username: root
             Default password: password
             Default WIFI name: OpenWrt
